@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Dcoument</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="../Style/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container feedback-form">
+        <div class="feedback-image">
+            <img height="100" src="../Images/rocket.png" alt="" />
+        </div>
+        <form method="post">
+            <h3>Drop Us A Feedback (Agent Coverage/Callathon)</h3>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <p class="p1">Did he updated on ongoing / Upcoming Contest</p>
+                        <input type="radio" name="updateSelect" id="updateOption-1" checked />
+                        <input type="radio" name="updateSelect" id="updateOption-2" />
+                        <label for="updateOption-1" class="option updateOption-1">
+                            <div class="dot1"></div>
+                            <span>Yes</span>
+                        </label>
+                        <label for="updateOption-2" class="option updateOption-2">
+                            <div class="dot1"></div>
+                            <span>No</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <p class="p2">Your Servicing / Claims Queries were answered to your satisfaction </p>
+                        <div class="star-widget">
+                            <input type="radio" name="rate" id="rate-5" />
+                            <label for="rate-5" class="fas fa-star"></label>
+
+                            <input type="radio" name="rate" id="rate-4" />
+                            <label for="rate-4" class="fas fa-star"></label>
+
+                            <input type="radio" name="rate" id="rate-3" />
+                            <label for="rate-3" class="fas fa-star"></label>
+
+                            <input type="radio" name="rate" id="rate-2" />
+                            <label for="rate-2" class="fas fa-star"></label>
+
+                            <input type="radio" name="rate" id="rate-1" />
+                            <label for="rate-1" class="fas fa-star"></label>
+                            <span class="result"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <p class="p3">Are you planning to place business in near future soon.</p>
+                        <input type="radio" name="businessselect" id="businessOption-1" checked />
+                        <input type="radio" name="businessselect" id="businessOption-2" />
+                        <label for="businessOption-1" class="option businessOption-1">
+                            <div class="dot2"></div>
+                            <span>Yes</span>
+                        </label>
+                        <label for="businessOption-2" class="option businessOption-2">
+                            <div class="dot2"></div>
+                            <span>No</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <input type="submit" class="btnfeedback" value="Send FeedBack" style="outline:none;" />
+                        <input type="button" class="btncancel" value="Cancel" style="outline:none;" />
+                    </div>
+                </div>
+            </div>
+    </form>
+    </div>
+</body>
+</html> 

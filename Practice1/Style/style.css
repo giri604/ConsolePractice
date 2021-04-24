@@ -1,0 +1,380 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+body{
+    background: grey;
+}
+.feedback-form{
+    background: #fff;
+    margin-top: 4%;
+    margin-bottom: 3%;
+}
+.feedback-form .form-control{
+    border-radius: 1rem;
+}
+.feedback-image {
+    text-align: center;
+}
+.feedback-image img{
+    border-radius: 6rem;
+    width: 9%;
+    margin-top: -4%;
+    transform: rotate(29deg);
+}
+.feedback-form form{
+    padding: 10%;
+}
+.feedback-form form .row {
+    margin-bottom: -7%;
+}
+.feedback-form h3{
+    margin-bottom: 5%;
+    margin-top: -10%;
+    text-align: center;
+    color: #0062cc;
+}
+.feedback-form .btnfeedback {
+    width: 15%;
+    border: none;
+    border-radius: 1rem;
+    padding: 1.5%;
+    background: #117a8b;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.feedback-form .btncancel {
+    width: 15%;
+    border: none;
+    border-radius: 1rem;
+    padding: 1.5%;
+    background: #dc3545;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.feedback-form .p1 {
+    margin-top: 10px;
+    margin-bottom: 8px;
+    color: grey;
+}
+.feedback-form .p2 {
+    margin-top: 10px;
+    margin-bottom: 3px;
+    color: grey;
+}
+.feedback-form .p3, #p3 {
+    margin-top: 35px;
+    margin-bottom: 10px;
+    color: grey;
+}
+
+.feedback-form .star-widget input{
+    display: none;
+}
+.star-widget {
+    float: left;
+    margin-top: -10px;
+}
+.star-widget label {
+    float: right;
+    font-size: 40px;
+    color: lightgrey;
+    margin: 0 5px;
+    text-shadow: 1px 1px #bbb;
+}
+.star-widget label:before {
+        content: '★';
+ }
+.star-widget input:checked ~ label {
+    color: gold;
+    text-shadow: 1px 1px #c60;
+}
+.star-widget:not(:checked) > label:hover,
+.star-widget:not(:checked) > label:hover ~ label {
+    color: gold;
+}
+
+.star-widget input:checked > label:hover,
+.star-widget input:checked > label:hover ~ label {
+    color: gold;
+    text-shadow: 1px 1px goldenrod;
+}
+
+    .star-widget .result:before, .jfw1result:before, .jfw2result:before, .jfw3result:before, .agtresult:before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        left: 50%;
+        transform: translateX(-47%);
+        bottom: -30px;
+        font-size: 20px;
+        font-weight: 500;
+        color: gold;
+        font-family: 'Poppins', sans-serif;
+        display: none;
+    }
+
+    .star-widget input:checked ~ .result:before, .jfw1result:before, .jfw2result:before, .agtresult:before {
+        display: block;
+    }
+
+    /*5 Star*/
+    .star-widget #rate-5:checked ~ .result:before {
+        content: "I love it 😍";
+    }
+    .star-widget #jfw1rate-5:checked ~ .jfw1result:before {
+        content: "I love it 😍";
+    }
+    .star-widget #jfw2rate-5:checked ~ .jfw2result:before {
+        content: "I love it 😍";
+    }
+    .star-widget #jfw3rate-5:checked ~ .jfw3result:before {
+        content: "I love it 😍";
+    }
+    .star-widget #agt1rate-5:checked ~ .agtresult:before {
+        content: "I love it 😍";
+    }
+
+    /*4 Star*/
+    .star-widget #rate-4:checked ~ .result:before {
+        content: "I like it 😎";
+    }
+    .star-widget #jfw1rate-4:checked ~ .jfw1result:before {
+        content: "I like it 😎";
+    }
+    .star-widget #jfw2rate-4:checked ~ .jfw2result:before {
+        content: "I like it 😎";
+    }
+    .star-widget #jfw3rate-4:checked ~ .jfw3result:before {
+        content: "I like it 😎";
+    }
+    .star-widget #agt1rate-4:checked ~ .agtresult:before {
+        content: "I like it 😎";
+    }
+
+    /*3 Star*/
+    .star-widget #rate-3:checked ~ .result:before {
+        content: "It's good 😄";
+    }
+    .star-widget #jfw1rate-3:checked ~ .jfw1result:before {
+        content: "It's good 😄";
+    }
+    .star-widget #jfw2rate-3:checked ~ .jfw2result:before {
+        content: "It's good 😄";
+    }
+    .star-widget #jfw3rate-3:checked ~ .jfw3result:before {
+        content: "It's good 😄";
+    }
+    .star-widget #agt1rate-3:checked ~ .agtresult:before {
+        content: "It's good 😄";
+    }
+
+    /*2 Star*/
+    .star-widget #rate-2:checked ~ .result:before {
+        content: "I don't like it 😒";
+    }
+    .star-widget #jfw1rate-2:checked ~ .jfw1result:before {
+        content: "I don't like it 😒";
+    }
+    .star-widget #jfw2rate-2:checked ~ .jfw2result:before {
+        content: "I don't like it 😒";
+    }
+    .star-widget #jfw3rate-2:checked ~ .jfw3result:before {
+        content: "I don't like it 😒";
+    }
+    .star-widget #agt1rate-2:checked ~ .agtresult:before {
+        content: "I don't like it 😒";
+    }
+
+    /*1 Star*/
+    .star-widget #rate-1:checked ~ .result:before {
+        content: "I hate it 😠";
+    }
+    .star-widget #jfw1rate-1:checked ~ .jfw1result:before {
+        content: "I hate it 😠";
+    }
+    .star-widget #jfw2rate-1:checked ~ .jfw2result:before {
+        content: "I hate it 😠";
+    }
+    .star-widget #jfw3rate-1:checked ~ .jfw3result:before {
+        content: "I hate it 😠";
+    }
+    .star-widget #agt1rate-1:checked ~ .agtresult:before {
+        content: "I hate it 😠";
+    }
+
+/*Radio button CSS*/
+.feedback-form .option {
+    background: #fff;
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0 10px;
+    border: 2px solid lightgrey;
+    transition: all 0.3s ease;
+}
+    .feedback-form .option .dot1, .dot2, .agtdot1, .agtdot2, .agtdot3 {
+        height: 20px;
+        width: 20px;
+        background: #d9d9d9;
+        border-radius: 50%;
+        position: relative;
+    }
+        .feedback-form .option .dot1::before, .dot2::before, .agtdot1::before, .agtdot2::before, .agtdot3::before {
+            position: absolute;
+            content: "";
+            top: 4px;
+            left: 4px;
+            width: 12px;
+            height: 12px;
+            background: #0069d9;
+            border-radius: 50%;
+            opacity: 0;
+            transform: scale(1.5);
+            transition: all 0.3s ease;
+        }
+input[type="radio"]{
+  display: none;
+}
+#updateOption-1:checked:checked ~ .updateOption-1,
+#updateOption-2:checked:checked ~ .updateOption-2 {
+    border-color: #0069d9;
+    background: #0069d9;
+}
+#updateOption-1:checked:checked ~ .updateOption-1 .dot1,
+#updateOption-2:checked:checked ~ .updateOption-2 .dot1 {
+    background: #fff;
+}
+    #updateOption-1:checked:checked ~ .updateOption-1 .dot1::before,
+    #updateOption-2:checked:checked ~ .updateOption-2 .dot1::before {
+        opacity: 1;
+        transform: scale(1);
+    }
+.feedback-form .option span{
+  font-size: 20px;
+  color: #808080;
+}
+#updateOption-1:checked:checked ~ .updateOption-1 span,
+#updateOption-2:checked:checked ~ .updateOption-2 span {
+    color: #fff;
+}
+
+/*businessOption*/
+/*.feedback-form .option .dot2 {
+    height: 20px;
+    width: 20px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    position: relative;
+}
+
+    .feedback-form .option .dot2::before {
+        position: absolute;
+        content: "";
+        top: 4px;
+        left: 4px;
+        width: 12px;
+        height: 12px;
+        background: #0069d9;
+        border-radius: 50%;
+        opacity: 0;
+        transform: scale(1.5);
+        transition: all 0.3s ease;
+    }*/
+
+#businessOption-1:checked:checked ~ .businessOption-1,
+#businessOption-2:checked:checked ~ .businessOption-2 {
+    border-color: #0069d9;
+    background: #0069d9;
+}
+
+    #businessOption-1:checked:checked ~ .businessOption-1 .dot2,
+    #businessOption-2:checked:checked ~ .businessOption-2 .dot2 {
+        background: #fff;
+    }
+
+        #businessOption-1:checked:checked ~ .businessOption-1 .dot2::before,
+        #businessOption-2:checked:checked ~ .businessOption-2 .dot2::before {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+    #businessOption-1:checked:checked ~ .businessOption-1 span,
+    #businessOption-2:checked:checked ~ .businessOption-2 span {
+        color: #fff;
+    }
+
+/*Agt1option*/
+#agt1option-1:checked:checked ~ .agt1option-1,
+#agt1option-2:checked:checked ~ .agt1option-2 {
+    border-color: #0069d9;
+    background: #0069d9;
+}
+
+    #agt1option-1:checked:checked ~ .agt1option-1 .agtdot1,
+    #agt1option-2:checked:checked ~ .agt1option-2 .agtdot1 {
+        background: #fff;
+    }
+
+        #agt1option-1:checked:checked ~ .agt1option-1 .agtdot1::before,
+        #agt1option-2:checked:checked ~ .agt1option-2 .agtdot1::before {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+    #agt1option-1:checked:checked ~ .agt1option-1 span,
+    #agt1option-2:checked:checked ~ .agt1option-2 span {
+        color: #fff;
+    }
+
+/*Agt2option*/
+#agt2option-1:checked:checked ~ .agt2option-1,
+#agt2option-2:checked:checked ~ .agt2option-2 {
+    border-color: #0069d9;
+    background: #0069d9;
+}
+
+    #agt2option-1:checked:checked ~ .agt2option-1 .agtdot2,
+    #agt2option-2:checked:checked ~ .agt2option-2 .agtdot2 {
+        background: #fff;
+    }
+
+        #agt2option-1:checked:checked ~ .agt2option-1 .agtdot2::before,
+        #agt2option-2:checked:checked ~ .agt2option-2 .agtdot2::before {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+    #agt2option-1:checked:checked ~ .agt2option-1 span,
+    #agt2option-2:checked:checked ~ .agt2option-2 span {
+        color: #fff;
+    }
+
+/*agt3option*/
+#agt3option-1:checked:checked ~ .agt3option-1,
+#agt3option-2:checked:checked ~ .agt3option-2 {
+    border-color: #0069d9;
+    background: #0069d9;
+}
+
+    #agt3option-1:checked:checked ~ .agt3option-1 .agtdot3,
+    #agt3option-2:checked:checked ~ .agt3option-2 .agtdot3 {
+        background: #fff;
+    }
+
+        #agt3option-1:checked:checked ~ .agt3option-1 .agtdot3::before,
+        #agt3option-2:checked:checked ~ .agt3option-2 .agtdot3::before {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+    #agt3option-1:checked:checked ~ .agt3option-1 span,
+    #agt3option-2:checked:checked ~ .agt3option-2 span {
+        color: #fff;
+    }
