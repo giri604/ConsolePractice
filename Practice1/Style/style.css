@@ -32,7 +32,7 @@ body{
     color: #0062cc;
 }
 .feedback-form .btnfeedback {
-    width: 15%;
+    /*width: 15%;*/
     border: none;
     border-radius: 1rem;
     padding: 1.5%;

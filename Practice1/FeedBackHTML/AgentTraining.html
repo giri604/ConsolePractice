@@ -9,6 +9,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link href="../Style/style.css" rel="stylesheet" />
+    <script src="../Script/Script.js"></script>
 </head>
 
 <body>
@@ -25,19 +26,19 @@
                     <div class="form-group">
                         <p class="p2">How do you rate your overall training Experience ?</p>
                         <div class="star-widget">
-                            <input type="radio" name="rate" id="agt1rate-5" />
+                            <input type="radio" name="rate" id="agt1rate-5" value="5" />
                             <label for="agt1rate-5" class="fas fa-star"></label>
 
-                            <input type="radio" name="rate" id="agt1rate-4" />
+                            <input type="radio" name="rate" id="agt1rate-4" value="4" />
                             <label for="agt1rate-4" class="fas fa-star"></label>
 
-                            <input type="radio" name="rate" id="agt1rate-3" />
+                            <input type="radio" name="rate" id="agt1rate-3" value="3" />
                             <label for="agt1rate-3" class="fas fa-star"></label>
 
-                            <input type="radio" name="rate" id="agt1rate-2" />
+                            <input type="radio" name="rate" id="agt1rate-2" value="2" />
                             <label for="agt1rate-2" class="fas fa-star"></label>
 
-                            <input type="radio" name="rate" id="agt1rate-1" />
+                            <input type="radio" name="rate" id="agt1rate-1" value="1" />
                             <label for="agt1rate-1" class="fas fa-star"></label>
                             <span class="agtresult"></span>
                         </div>
@@ -46,8 +47,8 @@
                 <div class="col-md-12">
                     <div class="form-group">
                         <p class="p3">Were you were informed well before about the schedule of training ?</p>
-                        <input type="radio" name="agt1select" id="agt1option-1" checked />
-                        <input type="radio" name="agt1select" id="agt1option-2" />
+                        <input type="radio" name="agt1select" id="agt1option-1" value="Yes"/>
+                        <input type="radio" name="agt1select" id="agt1option-2" value="No"/>
                         <label for="agt1option-1" class="option agt1option-1">
                             <div class="agtdot1"></div>
                             <span>Yes</span>
@@ -61,8 +62,8 @@
                 <div class="col-md-12">
                     <div class="form-group">
                         <p class="p2">Was Training Content Relevant / Useful to you ?</p>
-                        <input type="radio" name="agt2select" id="agt2option-1" checked />
-                        <input type="radio" name="agt2select" id="agt2option-2" />
+                        <input type="radio" name="agt2select" id="agt2option-1" value="Yes"/>
+                        <input type="radio" name="agt2select" id="agt2option-2" value="No"/>
                         <label for="agt2option-1" class="option agt2option-1">
                             <div class="agtdot2"></div>
                             <span>Yes</span>
@@ -77,8 +78,8 @@
                 <div class="col-md-12">
                     <div class="form-group">
                         <p class="p2">Are your going to attend next training ?</p>
-                        <input type="radio" name="agt3select" id="agt3option-1" checked />
-                        <input type="radio" name="agt3select" id="agt3option-2" />
+                        <input type="radio" name="agt3select" id="agt3option-1" value="Yes" />
+                        <input type="radio" name="agt3select" id="agt3option-2" value="No"/>
                         <label for="agt3option-1" class="option agt3option-1">
                             <div class="agtdot3"></div>
                             <span>Yes</span>
@@ -91,7 +92,7 @@
                 </div>
                 <div class="col-md-12">
                     <div class="form-group">
-                        <input type="submit" class="btnfeedback" value="Send FeedBack" style="outline:none;" />
+                        <input type="button" class="btnfeedback" value="Send FeedBack" style="outline:none;" onclick="submitAgentFeedback()" />
                         <input type="button" class="btncancel" value="Cancel" style="outline:none;" />
                     </div>
                 </div>

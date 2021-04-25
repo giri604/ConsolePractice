@@ -9,6 +9,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link href="../Style/style.css" rel="stylesheet" />
+    <script src="../Script/Script.js"></script>
 </head>
 
 <body>
@@ -23,19 +24,19 @@
                     <div class="form-group">
                         <p class="p2">How do you rate your overall Experience of Joint interation of your agency manager with your Client ? </p>
                         <div class="star-widget">
-                            <input type="radio" name="rate1" id="jfw1rate-5" />
+                            <input type="radio" name="rate1" id="jfw1rate-5" value="5"/>
                             <label for="jfw1rate-5" class="fas fa-star"></label>
 
-                            <input type="radio" name="rate1" id="jfw1rate-4" />
+                            <input type="radio" name="rate1" id="jfw1rate-4" value="4"/>
                             <label for="jfw1rate-4" class="fas fa-star"></label>
 
-                            <input type="radio" name="rate1" id="jfw1rate-3" />
+                            <input type="radio" name="rate1" id="jfw1rate-3" value="3"/>
                             <label for="jfw1rate-3" class="fas fa-star"></label>
 
-                            <input type="radio" name="rate1" id="jfw1rate-2" />
+                            <input type="radio" name="rate1" id="jfw1rate-2" value="2"/>
                             <label for="jfw1rate-2" class="fas fa-star"></label>
 
-                            <input type="radio" name="rate1" id="jfw1rate-1" />
+                            <input type="radio" name="rate1" id="jfw1rate-1" value="1"/>
                             <label for="jfw1rate-1" class="fas fa-star"></label>
                             <span class="jfw1result"></span>
                         </div>
@@ -45,19 +46,19 @@
                     <div class="form-group">
                         <p class="p3">How do you rate your agency manager on product knowledge ?</p>
                         <div class="star-widget">
-                            <input type="radio" name="rate2" id="jfw2rate-5" />
+                            <input type="radio" name="rate2" id="jfw2rate-5" value="5"/>
                             <label for="jfw2rate-5" class="fas fa-star"></label>
 
-                            <input type="radio" name="rate2" id="jfw2rate-4" />
+                            <input type="radio" name="rate2" id="jfw2rate-4" value="4"/>
                             <label for="jfw2rate-4" class="fas fa-star"></label>
 
-                            <input type="radio" name="rate2" id="jfw2rate-3" />
+                            <input type="radio" name="rate2" id="jfw2rate-3" value="3"/>
                             <label for="jfw2rate-3" class="fas fa-star"></label>
 
-                            <input type="radio" name="rate2" id="jfw2rate-2" />
+                            <input type="radio" name="rate2" id="jfw2rate-2" value="2"/>
                             <label for="jfw2rate-2" class="fas fa-star"></label>
 
-                            <input type="radio" name="rate2" id="jfw2rate-1" />
+                            <input type="radio" name="rate2" id="jfw2rate-1" value="1"/>
                             <label for="jfw2rate-1" class="fas fa-star"></label>
                             <span class="jfw2result"></span>
                         </div>
@@ -67,30 +68,27 @@
                     <div class="form-group">
                         <p class="p3">How do you rate your agency manager on behavioural skills i.e communication, Objection handling etc ?</p>
                         <div class="star-widget">
-                            <input type="radio" name="rate3" id="jfw3rate-5" />
+                            <input type="radio" name="rate3" id="jfw3rate-5" value="5"/>
                             <label for="jfw3rate-5" class="fas fa-star"></label>
 
-                            <input type="radio" name="rate3" id="jfw3rate-4" />
+                            <input type="radio" name="rate3" id="jfw3rate-4" value="4"/>
                             <label for="jfw3rate-4" class="fas fa-star"></label>
 
-                            <input type="radio" name="rate3" id="jfw3rate-3" />
+                            <input type="radio" name="rate3" id="jfw3rate-3" value="3"/>
                             <label for="jfw3rate-3" class="fas fa-star"></label>
 
-                            <input type="radio" name="rate3" id="jfw3rate-2" />
+                            <input type="radio" name="rate3" id="jfw3rate-2" value="2"/>
                             <label for="jfw3rate-2" class="fas fa-star"></label>
 
-                            <input type="radio" name="rate3" id="jfw3rate-1" />
+                            <input type="radio" name="rate3" id="jfw3rate-1" value="1"/>
                             <label for="jfw3rate-1" class="fas fa-star"></label>
                             <span class="jfw3result"></span>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-12">
-                    <!--<div class="form-group">
-            <textarea class="form-control" name="txtMsg" placeholder="Your Message Or Suggestion" style="width:600px;height:150px;margin-bottom:8px;margin-top: 40px;"></textarea>
-        </div>-->
                     <div class="form-group" id="p3">
-                        <input type="submit" class="btnfeedback" value="Send FeedBack" style="outline:none;" />
+                        <input type="button" class="btnfeedback" value="Send FeedBack" style="outline:none;" onclick="submitJFWFeedback()" />
                         <input type="button" class="btncancel" value="Cancel" style="outline:none;" />
                     </div>
                 </div>

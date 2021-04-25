@@ -54,6 +54,7 @@
     <Content Include="FeedBackHTML\Callathon.html" />
     <Content Include="FeedBackHTML\JFW.html" />
     <Content Include="Images\rocket.png" />
+    <Content Include="Script\Script.js" />
     <Content Include="Style\style.css" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

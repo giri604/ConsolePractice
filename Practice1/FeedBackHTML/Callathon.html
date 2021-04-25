@@ -9,6 +9,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link href="../Style/style.css" rel="stylesheet" />
+    <script src="../Script/Script.js"></script>
 </head>
 
 <body>
@@ -22,8 +23,8 @@
                 <div class="col-md-12">
                     <div class="form-group">
                         <p class="p1">Did he updated on ongoing / Upcoming Contest</p>
-                        <input type="radio" name="updateSelect" id="updateOption-1" checked />
-                        <input type="radio" name="updateSelect" id="updateOption-2" />
+                        <input type="radio" name="updateSelect" id="updateOption-1" value="Yes"/>
+                        <input type="radio" name="updateSelect" id="updateOption-2" value="No" />
                         <label for="updateOption-1" class="option updateOption-1">
                             <div class="dot1"></div>
                             <span>Yes</span>
@@ -38,19 +39,19 @@
                     <div class="form-group">
                         <p class="p2">Your Servicing / Claims Queries were answered to your satisfaction </p>
                         <div class="star-widget">
-                            <input type="radio" name="rate" id="rate-5" />
+                            <input type="radio" name="rate" id="rate-5" value="5" />
                             <label for="rate-5" class="fas fa-star"></label>
 
-                            <input type="radio" name="rate" id="rate-4" />
+                            <input type="radio" name="rate" id="rate-4" value="4"/>
                             <label for="rate-4" class="fas fa-star"></label>
 
-                            <input type="radio" name="rate" id="rate-3" />
+                            <input type="radio" name="rate" id="rate-3" value="3"/>
                             <label for="rate-3" class="fas fa-star"></label>
 
-                            <input type="radio" name="rate" id="rate-2" />
+                            <input type="radio" name="rate" id="rate-2" value="2"/>
                             <label for="rate-2" class="fas fa-star"></label>
 
-                            <input type="radio" name="rate" id="rate-1" />
+                            <input type="radio" name="rate" id="rate-1" value="1"/>
                             <label for="rate-1" class="fas fa-star"></label>
                             <span class="result"></span>
                         </div>
@@ -59,8 +60,8 @@
                 <div class="col-md-12">
                     <div class="form-group">
                         <p class="p3">Are you planning to place business in near future soon.</p>
-                        <input type="radio" name="businessselect" id="businessOption-1" checked />
-                        <input type="radio" name="businessselect" id="businessOption-2" />
+                        <input type="radio" name="businessselect" id="businessOption-1" value="Yes"/>
+                        <input type="radio" name="businessselect" id="businessOption-2" value="No" />
                         <label for="businessOption-1" class="option businessOption-1">
                             <div class="dot2"></div>
                             <span>Yes</span>
@@ -73,7 +74,7 @@
                 </div>
                 <div class="col-md-12">
                     <div class="form-group">
-                        <input type="submit" class="btnfeedback" value="Send FeedBack" style="outline:none;" />
+                        <input type="button" class="btnfeedback" value="Send FeedBack" style="outline:none;" onclick="submitCalathonFeedback()" />
                         <input type="button" class="btncancel" value="Cancel" style="outline:none;" />
                     </div>
                 </div>
