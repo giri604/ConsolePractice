@@ -116,9 +116,9 @@ body{
         display: none;
     }
 
-    .star-widget input:checked ~ .result:before, .jfw1result:before, .jfw2result:before, .agtresult:before {
-        display: block;
-    }
+        .star-widget input:checked ~ .result:before, .jfw1result:before, .jfw2result:before, .jfw3result:before, .agtresult:before {
+            display: block;
+        }
 
     /*5 Star*/
     .star-widget #rate-5:checked ~ .result:before {
